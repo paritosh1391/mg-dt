@@ -1564,6 +1564,10 @@ input[type=text] {
   /* IE6-9 fallback on horizontal gradient */
 }
 
+.owl-carousel2 .item {
+  padding: 0 15px;
+}
+
 #colorlib-footer {
   padding-top: 6em;
   background: #25282a;

@@ -1464,6 +1464,11 @@ input[type="text"] {
 		@include gradient-background();
 	}
 }
+.owl-carousel2 {
+	.item {
+		padding: 0 15px;
+	}	
+}
 
 #colorlib-footer {
 	padding-top: 6em;
@@ -1472,7 +1477,7 @@ input[type="text"] {
 	.footer-logo {
 		a {
 			display: block;
-    		width: 160px;
+			width: 160px;
 			img {
 				max-width: 100%;
 			}
