@@ -505,8 +505,8 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-flex-wrap: wrap;
 }
 .intro-flex .one-third {
-  width: 33.33%;
-  padding: 2em 2em 4em 2em;
+  width: 25%;
+  padding: 2em 1.5em 4em;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -569,6 +569,25 @@ h1, h2, h3, h4, h5, h6, figure {
 .intro-flex .one-third .price small {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
+}
+.intro-flex .one-third .btn-primary {
+  position: absolute;
+  bottom: 20px;
+  margin: 0;
+  border-radius: 10px;
+  padding: 9px 12px !important;
+  background: #DC2F2F;
+  background: #9870FC;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#DC2F2F", endColorstr="#9870FC",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  border: 0;
 }
 
 .services-img {
@@ -690,17 +709,20 @@ h1, h2, h3, h4, h5, h6, figure {
 .schedule .schedule-flex {
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
 }
 .schedule .schedule-flex:last-child {
   border-bottom: none;
+}
+.schedule .schedule-flex.active {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 .schedule .schedule-flex .entry-forth {
   width: 25%;
@@ -743,11 +765,17 @@ h1, h2, h3, h4, h5, h6, figure {
   text-fill-color: transparent;
 }
 .schedule .schedule-flex .entry-forth .time {
-  display: block;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 0 3px;
 }
 .schedule .schedule-flex .entry-forth .time span {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 5px;
+  margin: 0 0 10px;
+  width: 100%;
+  text-transform: uppercase;
   color: #fff;
   font-size: 12px;
   background: #9870FC;
@@ -764,6 +792,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   border-radius: 30px;
+}
+.schedule .schedule-flex .entry-forth .time strong {
+  display: block;
 }
 .schedule .schedule-flex .entry-forth .trainer {
   font-size: 13px;
@@ -842,7 +873,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .classes .desc h3 a {
   color: #000;
 }
-.classes .desc p a.btn-learn {
+.classes .desc p .btn-primary {
   color: #fff;
   font-size: 14px;
   padding: 8px 15px;
@@ -1306,7 +1337,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .contact-info-wrap-flex .con-info {
   width: 24%;
   background: #fff;
-  padding: 1.5em;
+  padding: 25px 15px;
   margin-left: 10px;
   background: #f2f3f7;
 }
@@ -1322,6 +1353,14 @@ h1, h2, h3, h4, h5, h6, figure {
 .contact-info-wrap-flex p {
   margin-bottom: 0;
   color: #000;
+  position: relative;
+  padding-left: 23px;
+  font-size: 14px;
+}
+.contact-info-wrap-flex p span {
+  position: absolute;
+  left: 0;
+  top: 1px;
 }
 .contact-info-wrap-flex p span i {
   color: #DC2F2F;
@@ -1365,6 +1404,12 @@ input[type=text] {
 }
 .form-group label {
   font-weight: 400;
+}
+.form-group label.error {
+  color: #ff0404;
+}
+.form-group .form-control.error {
+  border-color: #ff0404;
 }
 .form-group .btn-modify {
   text-transform: uppercase;
@@ -2113,6 +2158,28 @@ input[type=text] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.success-msg {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 120px 15px 0;
+}
+.success-msg p {
+  background: #fff;
+  padding: 25px 15px;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+  width: 100%;
+}
+.success-msg p img {
+  display: block;
+  margin: 0 auto 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

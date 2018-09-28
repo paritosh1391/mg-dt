@@ -586,8 +586,8 @@ h1, h2, h3, h4, h5, h6, figure {
 	@include flex();
 	@include flexwrap();
 	.one-third{
-		width: 33.33%;
-		padding: 2em 2em 4em 2em;
+		width: 25%;
+		padding: 2em 1.5em 4em;
 		position: relative;
 		overflow: hidden;
 		z-index: 0;
@@ -635,6 +635,16 @@ h1, h2, h3, h4, h5, h6, figure {
 				color: rgba(255,255,255,.8);
 				font-weight: 400;
 			}
+		}
+		.btn-primary {
+			position: absolute;
+			bottom: 20px;
+			margin: 0;
+			border-radius: 10px;
+			padding: 9px 12px !important;
+			background: $brand-primary;
+			@include gradient-background();
+			border:0;
 		}
 	}
 }
@@ -723,10 +733,13 @@ h1, h2, h3, h4, h5, h6, figure {
 	.schedule-flex{
 		width: 100%;
 		border-bottom: 1px solid lighten($brand-black,85%);
-		@include flex();
+		display: none;
 		@include flexwrap();
 		&:last-child{
 			border-bottom: none;
+		}
+		&.active {
+			@include flex();
 		}
 		.entry-forth{
 			width: 25%;
@@ -751,14 +764,23 @@ h1, h2, h3, h4, h5, h6, figure {
 				}
 			}
 			.time{
-				display: block;
+				display: inline-block;
+				width: 49%;
+				vertical-align: top;
+				padding: 0 3px;
 				span{ 
 					display: inline-block;
-					padding: 5px 15px;
+					padding: 5px;
+					margin: 0 0 10px;
+					width: 100%;
+					text-transform: uppercase;
 					color: $brand-white;
 					font-size: 12px;
 					@include gradient-background();
 					@include border-radius(30px);
+				}
+				strong {
+					display: block;
 				}
 			}
 			.trainer{
@@ -825,7 +847,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			}
 		}
 		p{
-			a.btn-learn{
+			.btn-primary {
 				color: $brand-white;
 				font-size: 14px;
 				padding: 8px 15px;
@@ -838,6 +860,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				@include gradient-background();
 			}
 		}
+
 	}
 }
 
@@ -1255,7 +1278,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	.con-info{
 		width: 24%;
 		background: $brand-white;
-		padding: 1.5em;
+		padding: 25px 15px;
 		margin-left: 10px;
 		// background: lighten($brand-black,98%);
 		background: $brand-gray;
@@ -1270,7 +1293,13 @@ h1, h2, h3, h4, h5, h6, figure {
 	p{
 		margin-bottom: 0;
 		color: $brand-black;
+		position: relative;
+		padding-left: 23px;
+		font-size: 14px;
 		span{
+			position: absolute;
+			left: 0;
+			top: 1px;
 			i{
 				color: $brand-primary;
 			}
@@ -1315,6 +1344,12 @@ input[type="text"] {
 	}
 	label{
 		font-weight: 400;
+		&.error {
+			color:#ff0404;
+		}
+	}
+	.form-control.error {
+		border-color: #ff0404;
 	}
 	.btn-modify{
 		text-transform: uppercase;
@@ -1971,5 +2006,27 @@ input[type="text"] {
 .animate-box {
 	.js & {
 		opacity: 0;
+	}
+}
+
+.success-msg {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	padding: 120px 15px 0;
+	p {
+		background: #fff;
+		padding: 25px 15px;
+		border-radius: 10px;
+		max-width: 650px;
+		margin: 0 auto;
+		width: 100%;
+		img {
+			display: block;
+    		margin: 0 auto 30px;
+		}
 	}
 }
