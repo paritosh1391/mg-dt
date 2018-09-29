@@ -876,7 +876,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .classes .desc p .btn-primary {
   color: #fff;
   font-size: 14px;
-  padding: 8px 15px;
+  padding: 8px 15px !important;
+  border: 0;
   text-transform: uppercase;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -1053,8 +1054,19 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0.5;
 }
 
+#gallery a {
+  display: inline-block;
+  padding: 0 10px;
+  height: 210px;
+  overflow: hidden;
+}
+#gallery a img {
+  max-width: 100%;
+}
+
 #colorlib-testimony {
   z-index: 0;
+  min-height: 740px;
 }
 #colorlib-testimony .colorlib-heading {
   margin-bottom: 3em;
@@ -2180,6 +2192,180 @@ input[type=text] {
 .success-msg p img {
   display: block;
   margin: 0 auto 30px;
+}
+
+.single-price {
+  background-color: #f9f9ff;
+}
+
+.single-price .top-sec, .single-price .bottom-sec {
+  border-bottom: 1px solid #eeeeee;
+  padding: 40px 40px 22px 40px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+
+.top-left {
+  float: left;
+}
+
+.top-right {
+  float: right;
+}
+
+.single-price .end-sec {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 40px 40px 22px 40px;
+}
+
+.single-price .end-sec ul li {
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background-color: #f6214b;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 60px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.single-price .price-btn {
+  background: #222;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.primary-btn span {
+  color: #fff;
+  position: absolute;
+  right: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.primary-btn:hover span {
+  color: #fff;
+  right: 20px;
+}
+
+.single-price:hover .bottom-sec, .single-price:hover .end-sec {
+  background-color: #f6214b;
+  box-shadow: 0px 20px 20px 0px rgba(157, 157, 157, 0.5);
+  color: #fff;
+}
+
+.single-price:hover .bottom-sec, .single-price:hover .end-sec {
+  background-color: #f6214b;
+  box-shadow: 0px 20px 20px 0px rgba(157, 157, 157, 0.5);
+  color: #fff;
+}
+
+.end-sec ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.single-price:hover .price-btn {
+  background: #fff;
+  color: #222;
+}
+
+.single-price:hover .price-btn span {
+  color: #222;
+}
+
+.classes {
+  min-height: 570px;
+}
+
+.btn-wrap {
+  font-size: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  background: #DC2F2F;
+  background: #9870FC;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#DC2F2F", endColorstr="#9870FC",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  padding: 10px 0;
+  margin: 0;
+  opacity: 0.95;
+}
+.btn-wrap li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+.btn-wrap li:last-child {
+  border-right: 0;
+}
+.btn-wrap li a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .primary-btn {
+    padding-left: 15px;
+    padding-right: 55px;
+    font-size: 14px;
+  }
+
+  .single-price {
+    margin: 0 10px;
+  }
+
+  .single-price .top-sec, .single-price .bottom-sec, .single-price .end-sec {
+    padding: 40px 20px 22px;
+  }
+
+  #gallery a {
+    width: 100%;
+  }
+
+  .top-left, .top-right {
+    float: none;
+  }
+
+  .top-right h1 {
+    font-weight: 600;
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -45,6 +44,12 @@
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
+	<!-- Fancybox  -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+	<!-- Slick  -->
+	<link rel="stylesheet" href="css/slick.css">
+
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -60,7 +65,7 @@
 
 	<?php 
 	if($_POST["submit"]) {
-		$recipient="paritosh.singh@nextraworld.com";
+		$recipient="info@mg-dys.com, digvijay6666@gmail.com";
 		$subject="Form to email message";
 		$sender=@$_POST["sender"];
 		$senderEmail=@$_POST["senderEmail"];
@@ -207,9 +212,9 @@
 									</button>
 								</div>
 							</div>
-							<div class="one-third intro-img" style="background-image: url(images/intro-img-2.jpg)">
+							<div class="one-third intro-img" style="background-image: url(images/t1.jpg)">
 								<div class="desc">
-									<h3>Yoga Program</h3>
+									<h3>weight loss Program</h3>
 									<p>Which roasted parts of sentences fly into your mouth.</p>
 									<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 										Join Classes
@@ -285,7 +290,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
 						<h2>Our Class Schedule</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+						<p>Regular Timing - <strong>6:00 A.M To 10:00 P.M</strong> </p>
 					</div>
 				</div>
 				<div class="row">
@@ -615,9 +620,7 @@
 						<div class="owl-carousel2">
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-1.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Aerobics</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -631,9 +634,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-2.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Circuit Training</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -647,9 +648,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-5.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Power Yoga</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -663,9 +662,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-6.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Personal Trainer</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -679,9 +676,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/c2.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Weight Lifting</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -695,9 +690,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-3.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Cross Fit</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -711,9 +704,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/c3.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Functional Training</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -727,9 +718,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/blog-4.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Zumba</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -743,9 +732,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/CrossWorkout1.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Body Tech Classes</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -759,9 +746,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-1.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Kids Cross Work Out</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -775,9 +760,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-5.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Kids Yoga</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -791,9 +774,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-3.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Kids Dance</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -807,9 +788,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-1.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-2.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">MMA Boxing</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -824,7 +803,7 @@
 							<div class="item">
 								<div class="classes">
 									<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
+										
 									</div>
 									<div class="desc">
 										<h3><a href="#">High Intensity Interval Training</a></h3>
@@ -840,7 +819,7 @@
 							<div class="item">
 								<div class="classes">
 									<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-										<span class="price text-center">$25.00<br><small>/month</small></span>
+										
 									</div>
 									<div class="desc">
 										<h3><a href="#">Drastic transformation Program</a></h3>
@@ -859,6 +838,219 @@
 			</div>	
 		</div>
 
+		<div id="plans" class="colorlib-classes">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Choose the Perfect Plan for you</h2>
+					</div>
+				</div>					
+				<div class="row hidden-xs">
+					<div class="col-lg-4">
+						<div class="single-price">
+							<div class="top-sec d-flex justify-content-between">
+								<div class="top-left">
+									<h4>Standard</h4>
+									<p>For the <br>individuals</p>
+								</div>
+								<div class="top-right">
+									<h1>&#8377; 14,000</h1>
+								</div>
+							</div>
+							<div class="bottom-sec">
+								<p>
+									“Few would argue that, despite the advancements
+								</p>
+							</div>
+							<div class="end-sec">
+								<ul>
+									<li>7 Days a Week</li>
+									<li>Dedicated Trainer Allocated</li>
+									<li>Diet Plan Inculuded</li>
+									<li>Morning and Evening Batches</li>
+								</ul>
+								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
+							</div>								
+						</div> 
+					</div>
+					<div class="col-lg-4">
+						<div class="single-price">
+							<div class="top-sec d-flex justify-content-between">
+								<div class="top-left">
+									<h4>Business</h4>
+									<p>For the <br>small Company</p>
+								</div>
+								<div class="top-right">
+									<h1>&#8377; 18,000</h1>
+								</div>
+							</div>
+							<div class="bottom-sec">
+								<p>
+									“Few would argue that, despite the advancements
+								</p>
+							</div>
+							<div class="end-sec">
+								<ul>
+									<li>7 Days a Week</li>
+									<li>Dedicated Trainer Allocated</li>
+									<li>Diet Plan Inculuded</li>
+									<li>Morning and Evening Batches</li>
+								</ul>
+								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
+							</div>								
+						</div> 
+					</div>	
+					<div class="col-lg-4">
+						<div class="single-price">
+							<div class="top-sec d-flex justify-content-between">
+								<div class="top-left">
+									<h4>Ultimate</h4>
+									<p>For the <br>large Company</p>
+								</div>
+								<div class="top-right">
+									<h1>&#8377; 22,000</h1>
+								</div>
+							</div>
+							<div class="bottom-sec">
+								<p>
+									“Few would argue that, despite the advancements
+								</p>
+							</div>
+							<div class="end-sec">
+								<ul>
+									<li>7 Days a Week</li>
+									<li>Dedicated Trainer Allocated</li>
+									<li>Diet Plan Inculuded</li>
+									<li>Morning and Evening Batches</li>
+								</ul>
+								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
+							</div>								
+						</div> 
+					</div>							
+				</div>
+				<div class="row visible-xs">
+					<div class="center">
+						<div class="single-price">
+							<div class="top-sec d-flex justify-content-between">
+								<div class="top-left">
+									<h4>Standard</h4>
+									<p>For the <br>individuals</p>
+								</div>
+								<div class="top-right">
+									<h1>&#8377; 14,000</h1>
+								</div>
+							</div>
+							<div class="bottom-sec">
+								<p>
+									“Few would argue that, despite the advancements
+								</p>
+							</div>
+							<div class="end-sec">
+								<ul>
+									<li>7 Days a Week</li>
+									<li>Dedicated Trainer Allocated</li>
+									<li>Diet Plan Inculuded</li>
+									<li>Morning and Evening Batches</li>
+								</ul>
+								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
+							</div>								
+						</div> 
+						<div class="single-price">
+							<div class="top-sec d-flex justify-content-between">
+								<div class="top-left">
+									<h4>Business</h4>
+									<p>For the <br>small Company</p>
+								</div>
+								<div class="top-right">
+									<h1>&#8377; 18,000</h1>
+								</div>
+							</div>
+							<div class="bottom-sec">
+								<p>
+									“Few would argue that, despite the advancements
+								</p>
+							</div>
+							<div class="end-sec">
+								<ul>
+									<li>7 Days a Week</li>
+									<li>Dedicated Trainer Allocated</li>
+									<li>Diet Plan Inculuded</li>
+									<li>Morning and Evening Batches</li>
+								</ul>
+								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
+							</div>								
+						</div> 
+						<div class="single-price">
+							<div class="top-sec d-flex justify-content-between">
+								<div class="top-left">
+									<h4>Ultimate</h4>
+									<p>For the <br>large Company</p>
+								</div>
+								<div class="top-right">
+									<h1>&#8377; 22,000</h1>
+								</div>
+							</div>
+							<div class="bottom-sec">
+								<p>
+									“Few would argue that, despite the advancements
+								</p>
+							</div>
+							<div class="end-sec">
+								<ul>
+									<li>7 Days a Week</li>
+									<li>Dedicated Trainer Allocated</li>
+									<li>Diet Plan Inculuded</li>
+									<li>Morning and Evening Batches</li>
+								</ul>
+								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
+							</div>								
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="colorlib-classes colorlib-light-grey" id="gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>gallery</h2>
+					</div>
+					<div class="col-xs-12">
+						<div class="gallery-wrap">
+							<div class="item">
+								<a data-fancybox="gallery" href="images/Banner 4.jpg"><img src="images/Banner 4.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/mg-misc1.jpg"><img src="images/mg-misc1.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/CrossWorkout1.jpg"><img src="images/CrossWorkout1.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/in_action1.jpg"><img src="images/in_action1.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/mg-misc2.jpg"><img src="images/mg-misc2.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/mg-misc4.jpg"><img src="images/mg-misc4.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/mg-misc5.jpg"><img src="images/mg-misc5.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/mg-misc6.jpg"><img src="images/mg-misc6.jpg"></a>	
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" href="images/mg-misc7.jpg"><img src="images/mg-misc7.jpg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="colorlib-contact">
 			<div class="container">
 				<div class="row">
@@ -891,7 +1083,7 @@
 						<h2>Get In Touch</h2>
 						<?php 
 						if($_POST["submit"]) {
-							$recipient="paritosh.singh@nextraworld.com";
+							$recipient="info@mg-dys.com, digvijay6666@gmail.com";
 							$senderSubject=@$_POST["senderSubject"];
 							$sender=@$_POST["sender"];
 							$senderEmail=@$_POST["senderEmail"];
@@ -1010,69 +1202,85 @@
 					</div>
 				</div>
 			</div>
-			</footer>
-		</div>
+		</footer>
+	</div>
 
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-		</div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
 
-		
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-					</div>
-					<div class="modal-body">
-						<form method="POST">
-							<div class="form-group">
-								<input type="text" class="form-control" name="sender" placeholder="Full Name" required>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" name="senderEmail" placeholder="Email" required>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" name="senderNumber" placeholder="Phone Number" required>
-							</div>
-							<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+				</div>
+				<div class="modal-body">
+					<form method="POST">
+						<div class="form-group">
+							<input type="text" class="form-control" name="sender" placeholder="Full Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="senderEmail" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="senderNumber" placeholder="Phone Number" required>
+						</div>
+						<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
-		<!-- Modal -->
+	</div>
+	<!-- Modal -->
 
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Stellar Parallax -->
-		<script src="js/jquery.stellar.min.js"></script>
-		<!-- Flexslider -->
-		<script src="js/jquery.flexslider-min.js"></script>
-		<!-- Owl carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/magnific-popup-options.js"></script>
-		<!-- Counters -->
-		<script src="js/jquery.countTo.js"></script>
+	<ul class="btn-wrap visible-xs">
+		<li>
+			<a href="tel:9871002689"><i class="icon-phone"></i></a>
+		</li>
+		<li>
+			<a href="mailto:info@mg-dys.com"><i class="icon-envelope"></i></a>
+		</li>
+	</ul>
 
-		<script src="js/jquery.validate.min.js"></script>
-		<!-- Main -->
-		<script src="js/main.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
 
-	</body>
-	</html>
+	<script src="js/jquery.validate.min.js"></script>
+
+	<!-- Fancybox  -->
+	<script src="js/jquery.fancybox.min.js"></script>
+
+	<!-- Slick  -->
+	<script src="js/slick.min.js"></script>
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
 

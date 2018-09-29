@@ -306,6 +306,35 @@
 			]
 		});
 
+		var owl3 = $(".gallery-wrap");
+
+		owl3.owlCarousel({
+			autoplay: true,
+			items: 3,
+			autoHeight: true,
+			loop: true,
+			responsiveClass: true,
+			nav: true,
+			dots: false,
+			mouseDrag: false,
+			smartSpeed: 500,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:2
+				},
+				1000:{
+					items:3
+				}
+			},
+			navText: [
+			"<i class='icon-arrow-left3 owl-direction'></i>",
+			"<i class='icon-arrow-right3 owl-direction'></i>"
+			]
+		});
+
 	};
 
 
@@ -355,5 +384,38 @@
 		}, 3000);
 		
 	}
+
+	$('.center').slick({
+		centerMode: true,
+		centerPadding: '10px',
+		slidesToShow: 1,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '10px',
+				slidesToShow: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '10px',
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+
+
+	$('').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	});
 
 }());
