@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			position: relative;
 			color: $brand-white;
 			display: block;
-			max-width: 80px;
+			max-width: 100px;
 			img {
 				max-width: 100%;
 			}
@@ -429,7 +429,6 @@ h1, h2, h3, h4, h5, h6, figure {
 	min-height: 700px;
 	background: $brand-white url(../images/loader.gif) no-repeat center center;
 	width: 100%;
-	float: left;
 	.btn {
 		font-size: 24px;
 		&.btn-primary {
@@ -691,6 +690,9 @@ h1, h2, h3, h4, h5, h6, figure {
 			font-size: 16px;
 			font-weight: 700;
 			text-transform: uppercase;
+		}
+		p {
+			font-size: 15px;
 		}
 	}
 }
@@ -1112,7 +1114,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			padding: 0;
 			color: $brand-white;
 			p{
-				font-size: 20px;
+				font-size: 16px;
 				font-weight: 400;
 			}
 		}
@@ -2021,13 +2023,9 @@ input[type="text"] {
 }
 
 .success-msg {
-	position: fixed;
-	z-index: 10;
-	width: 100%;
-	height: 100%;
 	background: rgba(0,0,0,0.7);
 	text-align: center;
-	padding: 120px 15px 0;
+	padding: 120px 15px;
 	p {
 		background: #fff;
 		padding: 25px 15px;
@@ -2048,7 +2046,7 @@ input[type="text"] {
 }
 .single-price .top-sec, .single-price .bottom-sec {
 	border-bottom: 1px solid #eeeeee;
-	padding: 40px 40px 22px 40px;
+	padding: 40px 30px 22px;
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
@@ -2066,7 +2064,7 @@ input[type="text"] {
 	-moz-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	padding: 40px 40px 22px 40px;
+	padding: 40px 30px 22px;
 }
 .single-price .end-sec ul li {
 	margin-bottom: 20px;
@@ -2161,6 +2159,14 @@ input[type="text"] {
 			font-size: 20px;
 			color: #fff;
 		}
+	}
+}
+
+#sunday {
+	strong {
+		display: block;
+		text-align: center;
+		width: 100%;
 	}
 }
 

@@ -243,17 +243,17 @@
 
 	};
 
-	var parallax = function() {
+	// var parallax = function() {
 
-		if ( !isMobile.any() ) {
-			$(window).stellar({
-				horizontalScrolling: false,
-				hideDistantElements: false, 
-				responsive: true
+	// 	if ( !isMobile.any() ) {
+	// 		$(window).stellar({
+	// 			horizontalScrolling: false,
+	// 			hideDistantElements: false, 
+	// 			responsive: true
 
-			});
-		}
-	};
+	// 		});
+	// 	}
+	// };
 
 	// Owl Carousel
 	var owlCrouselFeatureSlide = function() {
@@ -350,7 +350,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
-		parallax();
+		//parallax();
 		owlCrouselFeatureSlide();
 	});
 
@@ -378,12 +378,12 @@
 	$(".modal-body form").validate();
 	$("#colorlib-contact form").validate();
 
-	if($('.success-msg').length) {
-		setTimeout(function(){ 
-			$('.success-msg').fadeOut('slow');
-		}, 3000);
+	// if($('.success-msg').length) {
+	// 	setTimeout(function(){ 
+	// 		$('.success-msg').fadeOut('slow');
+	// 	}, 3000);
 		
-	}
+	// }
 
 	$('.center').slick({
 		centerMode: true,
@@ -417,5 +417,28 @@
 		slidesToShow: 3,
 		slidesToScroll: 1
 	});
+
+
+	if($(".services").length > 0) {
+		var heights = $(".services").map(function ()
+		{
+			return $(this).outerHeight();
+		}).get(),
+		maxHeight = Math.max.apply(null, heights);
+		jQuery(".services").css({
+			"height" : maxHeight
+		});
+	}
+
+	if($(".testimony-slide").length > 0) {
+		var heights = $(".testimony-slide").map(function ()
+		{
+			return $(this).outerHeight();
+		}).get(),
+		maxHeight = Math.max.apply(null, heights);
+		jQuery(".testimony-slide").css({
+			"height" : maxHeight
+		});
+	}
 
 }());

@@ -21,7 +21,6 @@
 	<meta name="twitter:card" content="" />
 	<link rel="shortcut icon" href="favicon.ico" />
 
-
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
 	
 	<!-- Animate.css -->
@@ -32,7 +31,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
 
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
@@ -60,6 +59,27 @@
 	<script src="js/respond.min.js"></script>
 <![endif]-->
 
+
+<!-- Global site tag (gtag.js) - Google Ads: 787043627 --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-787043627"></script> 
+<script> 
+	window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-787043627'); 
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126967441-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-126967441-1');
+</script>
+
+<!-- Event snippet for Form Lead conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
+<script> 
+	function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-787043627/DQplCP-gvooBEKuqpfcC', 'event_callback': callback }); return false; } 
+</script>
 </head>
 <body>
 
@@ -72,7 +92,8 @@
 		$senderNumber=@$_POST["senderNumber"];
 		$mailBody="Name: $sender\nEmail: $senderEmail\n\n$senderNumber";
 		mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-		$thankYou="<div class='success-msg'><p><img src='images/fitness.png' alt=''>Thank you! Your message has been sent.</p></div>";
+		//$thankYou="<div class='success-msg'><p><img src='images/fitness.png' alt=''>Thank you! Your message has been sent.</p></div>";
+		header('Location: thank-you.php');die;
 	}
 	?>
 
@@ -89,7 +110,7 @@
 						<div class="col-md-2">
 							<div id="colorlib-logo">
 								<a href="index.html">
-									<img src="images/logo.PNG" alt="MG Fitness Center - Gym">
+									<img src="images/logo-new.png" alt="MG Fitness Center - Gym">
 								</a> 
 							</div>
 						</div>
@@ -179,7 +200,6 @@
 				</ul>
 			</div>
 		</aside>
-		
 		<div id="colorlib-intro">
 			<div class="container">
 				<div class="row">
@@ -187,8 +207,8 @@
 						<div class="intro-flex">
 							<div class="one-third intro-img" style="background-image: url(images/intro-img-1.jpg)">
 								<div class="desc">
-									<h3>Body Building</h3>
-									<p>Which roasted parts of sentences fly into your mouth.</p>
+									<h3>Cross Workout</h3>
+									<p>Light-hearted workout to cover working on easy excercise filled with a lot of fun</p>
 									<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 										Join Classes
 									</button>
@@ -196,8 +216,8 @@
 							</div>
 							<div class="one-third intro-img" style="background-image: url(images/intro-img-2.jpg)">
 								<div class="desc">
-									<h3>Yoga Program</h3>
-									<p>Which roasted parts of sentences fly into your mouth.</p>
+									<h3>Zumba</h3>
+									<p>Personal Training involving aggresive dance workout to make your work fun</p>
 									<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 										Join Classes
 									</button>
@@ -205,8 +225,8 @@
 							</div>
 							<div class="one-third intro-img" style="background-image: url(images/intro-img-3.jpg)">
 								<div class="desc">
-									<h3>Aerobics Classes</h3>
-									<p>Which roasted parts of sentences fly into your mouth.</p>
+									<h3>Yoga</h3>
+									<p>Yogic trainers with peaceful atmosphere for daily flow of your Yoga energy.</p>
 									<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 										Join Classes
 									</button>
@@ -215,7 +235,7 @@
 							<div class="one-third intro-img" style="background-image: url(images/t1.jpg)">
 								<div class="desc">
 									<h3>weight loss Program</h3>
-									<p>Which roasted parts of sentences fly into your mouth.</p>
+									<p>Personalized Weight Loss Programs Designed by our Experts trainer to give prompt visible results.</p>
 									<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 										Join Classes
 									</button>
@@ -244,7 +264,7 @@
 							</span>
 							<div class="desc">
 								<h3>Cardio Program</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								<p>A dynamic cardiovascular workout utilizing boxing and martial arts style training to improve strength, agility and endurance.</p>
 							</div>
 						</div>
 					</div>
@@ -265,7 +285,7 @@
 								<i class="flaticon-martial-arts"></i>
 							</span>
 							<div class="desc">
-								<h3>Karate Classes</h3>
+								<h3>MMA Classes</h3>
 								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
 							</div>
 						</div>
@@ -297,8 +317,8 @@
 					<div class="schedule text-center animate-box">
 						<div class="col-md-12">
 							<ul class="week">
-								<li class="active" data-tab="sunday"><a href="javascript:void()">Sunday</a></li>
-								<li data-tab="monday"><a href="javascript:void()">Monday</a></li>
+								<li data-tab="sunday"><a href="javascript:void()">Sunday</a></li>
+								<li class="active" data-tab="monday"><a href="javascript:void()">Monday</a></li>
 								<li data-tab="tuesday"><a href="javascript:void()">Tuesday</a></li>
 								<li data-tab="wednesday"><a href="javascript:void()">Wednesday</a></li>
 								<li data-tab="thursday"><a href="javascript:void()">Thursday</a></li>
@@ -306,33 +326,10 @@
 								<li data-tab="saturday"><a href="javascript:void()">Saturday</a></li>
 							</ul>
 						</div>
-						<div class="schedule-flex active" id="sunday">
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-gym"></i></span></p>
-								<p class="time"><span>8:15AM - 9:15AM</span></p>
-								<h3>Zumba</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Loose Weight Program</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-meditation"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Yoga Classes</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
-							<div class="entry-forth">
-								<p class="icon"><span><i class="flaticon-gloves"></i></span></p>
-								<p class="time"><span>06am - 8am</span></p>
-								<h3>Boxing Program</h3>
-								<p class="trainer"><span>Tom Scott</span></p>
-							</div>
+						<div class="schedule-flex" id="sunday">
+							<strong>6:00 A.M To 2:00 P.M</strong>
 						</div>
-						<div class="schedule-flex" id="monday">
+						<div class="schedule-flex active" id="monday">
 							<div class="entry-forth">
 								<p class="icon"><span><i class="flaticon-gym"></i></span></p>
 								<p class="time"><strong>Morning</strong> <span>11 AM - 12 PM</span></p>
@@ -571,10 +568,10 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>Sophia Foster Loose 20LBS in just 2 months</span>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+												<span>Tanisha</span>
+												<p>Exercise is something that makes you look better and feel better. When done in combination with proper guidance its benefits are enhanced.It’s here that the trainers encourage you to push your limits to the next level thereby helping you move a step closer to your fitness goal.The staff is very friendly and they go out of there way to make you feel welcome and get to know you. Moreover with a variety of exercise combinations like zumba, weight training, cardio and cross workout you surely are never gonna get bored.Being a member of this gym for past couple of years , I just have to say that it's worth every penny you invest.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person1.jpg);"></div>
+											<div class="figure-img" style="background-image: url(images/tanisha_mg.jpg);"></div>
 										</div>
 									</div>
 								</div>
@@ -582,10 +579,10 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>John Collins</span>
-												<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+												<span>Anima Jain</span>
+												<p>This is an incredibly friendly gym with a great range of equipment, especially cross workout section which pushes to your limits, PTs who actually look like they enjoy their job and the management are warm, available and attentive to the needs of the members.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person2.jpg);"></div>
+											<div class="figure-img" style="background-image: url(images/anima_mg.jpg);"></div>
 										</div>
 									</div>
 								</div>
@@ -593,10 +590,22 @@
 									<div class="testimony-slide">
 										<div class="testimony-wrap">
 											<blockquote>
-												<span>Adam Ross</span>
-												<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+												<span>Vikas</span>
+												<p>'A Pleasant Surprise!'<br />
+												Nice, bold, clean and very modern. It'll take me some time to get used to cross workout routine but I'm very impressed I have to say. Never short of gear to use and I'm always inspired to work out. Money well spent - nice one!</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person3.jpg);"></div>
+											<div class="figure-img" style="background-image: url(images/vikas_mg.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide">
+										<div class="testimony-wrap">
+											<blockquote>
+												<span>Srisha</span>
+												<p>I have been doing my workout in MG gym almost since 2 years. The gym provides great facilities and training. Within 2 years of span gym got expanded to 3 floors from one floor which include various forms of workouts like cross workout, strength, functional training etc. The overall performance of gym is really fantastic when compared other gyms in Patparganj. Yes MG is known for "discover your shape" .</p>
+											</blockquote>
+											<div class="figure-img" style="background-image: url(images/srisha_mg.jpg);"></div>
 										</div>
 									</div>
 								</div>
@@ -623,7 +632,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-1.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Aerobics</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Rhythmic stretching and strength training routines with the goal of improving flexibility, muscular strength, and cardio-vascular fitness</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -637,7 +646,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-2.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Circuit Training</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Endurance training on "circuit" witht complete prescribed exercises in the Program</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -651,7 +660,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-5.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Power Yoga</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Yoga including building internal heat, increased stamina, strength, and flexibility, as well as stress reduction</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -665,7 +674,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-6.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Personal Trainer</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Certified Personal Trainer guidance for Cross Fit Training, Weight Loss Management, High Intensity Interval Training.</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -679,7 +688,7 @@
 									<div class="classes-img" style="background-image: url(images/c2.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Weight Lifting</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Professional Weightlifter's and world-class athlete who’s here to help you perfect your shape</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -707,7 +716,7 @@
 									<div class="classes-img" style="background-image: url(images/c3.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Functional Training</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Semi- Private Training to help you build strength, power, and mobility that translates beyond the gym</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -721,7 +730,7 @@
 									<div class="classes-img" style="background-image: url(images/blog-4.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Zumba</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Personal Training involving aggresive dance workout to make your work fun</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -734,8 +743,8 @@
 								<div class="classes">
 									<div class="classes-img" style="background-image: url(images/CrossWorkout1.jpg);"></div>
 									<div class="desc">
-										<h3><a href="#">Body Tech Classes</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<h3><a href="#">Body Tech</a></h3>
+										<p>Body Tech (or core conditioing) is a mix of aerobic, muscle-toning class, focused on core strength.</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -763,7 +772,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-5.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Kids Yoga</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Fun, light-hearted way to intrduce kids to yoga in thier life and added life energy level</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -777,7 +786,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-3.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Kids Dance</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Give your kids opportunity to learn dance, express themselves creatively jive to the beat of music</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -791,7 +800,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-2.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">MMA Boxing</a></h3>
-										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
+										<p>Training by proffesional MMA fighter to up the level of your practical defence n strenght training.</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -846,12 +855,11 @@
 					</div>
 				</div>					
 				<div class="row hidden-xs">
-					<div class="col-lg-4">
+					<!-- <div class="col-lg-4">
 						<div class="single-price">
 							<div class="top-sec d-flex justify-content-between">
 								<div class="top-left">
-									<h4>Standard</h4>
-									<p>For the <br>individuals</p>
+									<h4>Silver</h4>
 								</div>
 								<div class="top-right">
 									<h1>&#8377; 14,000</h1>
@@ -872,27 +880,20 @@
 								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
 							</div>								
 						</div> 
-					</div>
-					<div class="col-lg-4">
+					</div> -->
+					<div class="col-sm-4 col-sm-offset-2">
 						<div class="single-price">
 							<div class="top-sec d-flex justify-content-between">
 								<div class="top-left">
-									<h4>Business</h4>
-									<p>For the <br>small Company</p>
+									<h4>Gold</h4>
 								</div>
 								<div class="top-right">
 									<h1>&#8377; 18,000</h1>
 								</div>
 							</div>
-							<div class="bottom-sec">
-								<p>
-									“Few would argue that, despite the advancements
-								</p>
-							</div>
 							<div class="end-sec">
 								<ul>
 									<li>7 Days a Week</li>
-									<li>Dedicated Trainer Allocated</li>
 									<li>Diet Plan Inculuded</li>
 									<li>Morning and Evening Batches</li>
 								</ul>
@@ -900,26 +901,19 @@
 							</div>								
 						</div> 
 					</div>	
-					<div class="col-lg-4">
+					<div class="col-sm-4">
 						<div class="single-price">
 							<div class="top-sec d-flex justify-content-between">
 								<div class="top-left">
-									<h4>Ultimate</h4>
-									<p>For the <br>large Company</p>
+									<h4>Platinum</h4>
 								</div>
 								<div class="top-right">
 									<h1>&#8377; 22,000</h1>
 								</div>
 							</div>
-							<div class="bottom-sec">
-								<p>
-									“Few would argue that, despite the advancements
-								</p>
-							</div>
 							<div class="end-sec">
 								<ul>
 									<li>7 Days a Week</li>
-									<li>Dedicated Trainer Allocated</li>
 									<li>Diet Plan Inculuded</li>
 									<li>Morning and Evening Batches</li>
 								</ul>
@@ -1259,14 +1253,14 @@
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<!-- <script src="js/jquery.stellar.min.js"></script> -->
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Owl carousel -->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+	<!-- <script src="js/magnific-popup-options.js"></script> -->
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 
@@ -1280,6 +1274,20 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+			s1.async=true;
+			s1.src='https://embed.tawk.to/5ba9bfefb156da713cb3c5db/default';
+			s1.charset='UTF-8';
+			s1.setAttribute('crossorigin','*');
+			s0.parentNode.insertBefore(s1,s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 
 </body>
 </html>
