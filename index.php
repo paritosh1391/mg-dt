@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MG Fitness Center - Gym | Yoga | BodyBuilding | Aerobics</title>
+	<title>MG Fitness Center - Gym | Yoga | Weight Loss | Zumba</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
+	<meta name="description" content="Unlimited access to high end equipment's and wide spread workout space. Inclusive of Cardio Workout, Cross Workout, Weight Loss Program, Yoga, Kids Workout, Dance" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
@@ -21,17 +21,14 @@
 	<meta name="twitter:card" content="" />
 	<link rel="shortcut icon" href="favicon.ico" />
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet" disabled>
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css"> 
+	<!-- <link rel="stylesheet" href="css/animate.css">  -->
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
 
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
@@ -47,13 +44,13 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
 	<!-- Slick  -->
-	<link rel="stylesheet" href="css/slick.css">
+	<!-- <link rel="stylesheet" href="css/slick.css"> -->
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js" defer="defer"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -61,14 +58,14 @@
 
 
 <!-- Global site tag (gtag.js) - Google Ads: 787043627 --> 
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-787043627"></script> 
-<script> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-787043627" defer="defer"></script> 
+<script defer="defer"> 
 	window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-787043627'); 
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126967441-1"></script>
-<script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126967441-1" defer="defer"></script>
+<script defer="defer">
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
@@ -77,16 +74,23 @@
 </script>
 
 <!-- Event snippet for Form Lead conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> 
-<script> 
+<script defer="defer"> 
 	function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-787043627/DQplCP-gvooBEKuqpfcC', 'event_callback': callback }); return false; } 
 </script>
+
+<script defer="defer">
+	gtag('config', 'AW-787043627/O9udCI2T4YsBEKuqpfcC', {
+		'phone_conversion_number': '+919871002689'
+	});
+</script>
+
 </head>
 <body>
 
 	<?php 
 	if($_POST["submit"]) {
-		$recipient="info@mg-dys.com, digvijay6666@gmail.com";
-		$subject="Form to email message";
+		$recipient="paritosh.singh@nextraworld.com, digvijay6666@gmail.com";
+		$subject="Registration For Gym";
 		$sender=@$_POST["sender"];
 		$senderEmail=@$_POST["senderEmail"];
 		$senderNumber=@$_POST["senderNumber"];
@@ -203,7 +207,7 @@
 		<div id="colorlib-intro">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 intro-wrap animate-box">
+					<div class="col-md-12 intro-wrap">
 						<div class="intro-flex">
 							<div class="one-third intro-img" style="background-image: url(images/intro-img-1.jpg)">
 								<div class="desc">
@@ -246,18 +250,16 @@
 				</div>
 			</div>
 		</div>
-		
-
 		<div id="colorlib-services">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>Being fit is attractive</h2>
 						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-3 text-center">
 						<div class="services">
 							<span class="icon">
 								<i class="flaticon-gym"></i>
@@ -268,53 +270,98 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-3 text-center">
 						<div class="services">
 							<span class="icon">
 								<i class="flaticon-weightlifting"></i>
 							</span>
 							<div class="desc">
-								<h3>Body Building</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								<h3>Body Tech</h3>
+								<p>Body Tech (or core conditioing) is a mix of aerobic, muscle-toning class, focused on core strength.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-3 text-center">
 						<div class="services">
 							<span class="icon">
-								<i class="flaticon-martial-arts"></i>
+								<i class="flaticon-man"></i>
 							</span>
 							<div class="desc">
-								<h3>MMA Classes</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								<h3>ZUMBA</h3>
+								<p>Personal Training involving aggresive dance workout to make your work fun</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-3 text-center">
 						<div class="services">
 							<span class="icon">
-								<i class="flaticon-gloves"></i>
+								<i class="flaticon-meditation"></i>
 							</span>
 							<div class="desc">
-								<h3>Boxing Program</h3>
-								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								<h3>YOGA</h3>
+								<p>Yogic trainers with peaceful atmosphere for daily flow of your Yoga energy.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div id="colorlib-schedule" class="colorlib-light-grey">
+		<div id="colorlib-contact" class="colorlib-light-grey">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-6 col-md-offset-3">
+						<h2 class="text-center">Get In Touch</h2>
+						<?php 
+						if($_POST["submit"]) {
+							$recipient="info@mg-dys.com, digvijay6666@gmail.com";
+							$senderSubject=@$_POST["senderSubject"];
+							$sender=@$_POST["sender"];
+							$senderEmail=@$_POST["senderEmail"];
+							$senderNum=@$_POST["senderNum"];
+							$mailBody="Name: $sender\nEmail: $senderEmail\nNumber: $senderNum\n\n";
+							mail($recipient, $mailBody, "From: $sender <$senderEmail>");
+							$thankYou="<p>Thank you! Your message has been sent.</p>";
+						}
+						?>
+						<form method="POST">
+							<div class="row form-group">
+								<div class="col-md-12">
+									<input type="text" id="fname" name="sender" class="form-control" placeholder="Your Name" required>
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<input type="text" id="email" name="senderEmail" class="form-control" placeholder="Your email address" required>
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<input type="text" id="num" name="senderNum" class="form-control" placeholder="Your phone number" required>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-12 text-center">
+									<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
+								</div>
+							</div>
+						</form>		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="colorlib-schedule">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>Our Class Schedule</h2>
 						<p>Regular Timing - <strong>6:00 A.M To 10:00 P.M</strong> </p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="schedule text-center animate-box">
+					<div class="schedule text-center">
 						<div class="col-md-12">
 							<ul class="week">
 								<li data-tab="sunday"><a href="javascript:void()">Sunday</a></li>
@@ -364,13 +411,13 @@
 									<span>8:00 pm - 9:00 pm</span>
 									<span>9:00 pm - 10:00 pm</span>
 								</p>
-								<h3>Cross Fit Workout</h3>
+								<h3>Cross Workout Workout</h3>
 							</div>
 						</div>
 						<div class="schedule-flex" id="tuesday">
 							<div class="entry-forth">
 								<p class="icon"><span><i class="flaticon-gym"></i></span></p>
-								<p class="time"><strong>Morning</strong> <span>8:15 AM - 9:15 PM</span></p>
+								<p class="time"><strong>Morning</strong> <span>8:15 AM - 9:15 AM</span></p>
 								<p class="time"><strong>Evening</strong> <span>7 PM - 8 PM</span></p>
 								<h3>Zumba</h3>
 							</div>
@@ -402,7 +449,7 @@
 									<span>8:00 pm - 9:00 pm</span>
 									<span>9:00 pm - 10:00 pm</span>
 								</p>
-								<h3>Cross Fit Workout</h3>
+								<h3>Cross Workout Workout</h3>
 							</div>
 						</div>
 						<div class="schedule-flex" id="wednesday">
@@ -440,7 +487,7 @@
 									<span>8:00 pm - 9:00 pm</span>
 									<span>9:00 pm - 10:00 pm</span>
 								</p>
-								<h3>Cross Fit Workout</h3>
+								<h3>Cross Workout Workout</h3>
 							</div>
 						</div>
 						<div class="schedule-flex" id="thursday">
@@ -478,7 +525,7 @@
 									<span>8:00 pm - 9:00 pm</span>
 									<span>9:00 pm - 10:00 pm</span>
 								</p>
-								<h3>Cross Fit Workout</h3>
+								<h3>Cross Workout Workout</h3>
 							</div>
 						</div>
 						<div class="schedule-flex" id="friday">
@@ -516,7 +563,7 @@
 									<span>8:00 pm - 9:00 pm</span>
 									<span>9:00 pm - 10:00 pm</span>
 								</p>
-								<h3>Cross Fit Workout</h3>
+								<h3>Cross Workout Workout</h3>
 							</div>
 						</div>
 						<div class="schedule-flex" id="saturday">
@@ -545,24 +592,22 @@
 								<p class="trainer"><span>Tom Scott</span></p>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="colorlib-testimony" class="testimony-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>What People Says</h2>
 						<h3>Success Stories</h3>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<div class="row animate-box">
+						<div class="row">
 							<div class="owl-carousel1">
 								<div class="item">
 									<div class="testimony-slide">
@@ -615,11 +660,10 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="colorlib-classes colorlib-light-grey" id="classes">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>Our Classes</h2>
 						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
 					</div>
@@ -674,7 +718,7 @@
 									<div class="classes-img" style="background-image: url(images/classes-6.jpg);"></div>
 									<div class="desc">
 										<h3><a href="#">Personal Trainer</a></h3>
-										<p>Certified Personal Trainer guidance for Cross Fit Training, Weight Loss Management, High Intensity Interval Training.</p>
+										<p>Certified Personal Trainer guidance for Cross Workout Training, Weight Loss Management, High Intensity Interval Training.</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
 												Learn More <i class="icon-arrow-right3"></i>
@@ -701,7 +745,7 @@
 								<div class="classes">
 									<div class="classes-img" style="background-image: url(images/classes-3.jpg);"></div>
 									<div class="desc">
-										<h3><a href="#">Cross Fit</a></h3>
+										<h3><a href="#">Cross Workout</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
 										<p>
 											<button type="button" class="btn btn-primary btn-lg btn-learn" data-toggle="modal" data-target="#myModal">
@@ -811,9 +855,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-2.jpg);">
-										
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-2.jpg);"> </div>
 									<div class="desc">
 										<h3><a href="#">High Intensity Interval Training</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -827,9 +869,7 @@
 							</div>
 							<div class="item">
 								<div class="classes">
-									<div class="classes-img" style="background-image: url(images/classes-3.jpg);">
-										
-									</div>
+									<div class="classes-img" style="background-image: url(images/classes-3.jpg);"> </div>
 									<div class="desc">
 										<h3><a href="#">Drastic transformation Program</a></h3>
 										<p>Pointing has no control about the blind texts it is an almost unorthographic life</p>
@@ -846,15 +886,14 @@
 				</div>
 			</div>	
 		</div>
-
 		<div id="plans" class="colorlib-classes">
 			<div class="container">
 				<div class="row d-flex justify-content-center">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>Choose the Perfect Plan for you</h2>
 					</div>
 				</div>					
-				<div class="row hidden-xs">
+				<div class="row">
 					<!-- <div class="col-lg-4">
 						<div class="single-price">
 							<div class="top-sec d-flex justify-content-between">
@@ -888,7 +927,7 @@
 									<h4>Gold</h4>
 								</div>
 								<div class="top-right">
-									<h1>&#8377; 18,000</h1>
+									<h1>&#8377; 18,800</h1>
 								</div>
 							</div>
 							<div class="end-sec">
@@ -922,7 +961,7 @@
 						</div> 
 					</div>							
 				</div>
-				<div class="row visible-xs">
+				<!-- <div class="row visible-xs">
 					<div class="center">
 						<div class="single-price">
 							<div class="top-sec d-flex justify-content-between">
@@ -948,7 +987,7 @@
 								</ul>
 								<button class="primary-btn price-btn mt-20" data-toggle="modal" data-target="#myModal">Purchase Plan<span class="lnr lnr-arrow-right"><i class="icon-arrow-right3"></i></span></button>
 							</div>								
-						</div> 
+						</div>
 						<div class="single-price">
 							<div class="top-sec d-flex justify-content-between">
 								<div class="top-left">
@@ -956,7 +995,7 @@
 									<p>For the <br>small Company</p>
 								</div>
 								<div class="top-right">
-									<h1>&#8377; 18,000</h1>
+									<h1>&#8377; 18,800</h1>
 								</div>
 							</div>
 							<div class="bottom-sec">
@@ -1000,15 +1039,13 @@
 							</div>								
 						</div> 
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
-
-
 		<div class="colorlib-classes colorlib-light-grey" id="gallery">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>gallery</h2>
 					</div>
 					<div class="col-xs-12">
@@ -1045,10 +1082,11 @@
 				</div>
 			</div>
 		</div>
-		<div id="colorlib-contact">
+		
+		<div id="colorlib-contact2">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 animate-box fadeInUp animated-fast">
+					<div class="col-md-10 col-md-offset-1">
 						<h2>Contact Information</h2>
 						<div class="row">
 							<div class="col-md-12">
@@ -1073,64 +1111,60 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-10 col-md-offset-1 animate-box fadeInUp animated-fast">
-						<h2>Get In Touch</h2>
+					<div class="col-md-6 col-md-offset-3">
+						<h2 class="text-center">Get In Touch</h2>
 						<?php 
 						if($_POST["submit"]) {
 							$recipient="info@mg-dys.com, digvijay6666@gmail.com";
 							$senderSubject=@$_POST["senderSubject"];
 							$sender=@$_POST["sender"];
 							$senderEmail=@$_POST["senderEmail"];
-							$senderSubject=@$_POST["senderSubject"];
-							$message=@$_POST["message"];
-							$mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-							mail($recipient, $senderSubject, $mailBody, "From: $sender <$senderEmail>");
+							$senderNum=@$_POST["senderNum"];
+							$mailBody="Name: $sender\nEmail: $senderEmail\nNumber: $senderNum\n\n";
+							mail($recipient, $mailBody, "From: $sender <$senderEmail>");
 							$thankYou="<p>Thank you! Your message has been sent.</p>";
 						}
 						?>
 						<form method="POST">
 							<div class="row form-group">
-								<div class="col-md-6">
-									<input type="text" id="fname" name="sender" class="form-control" placeholder="Your Name" required>
+								<div class="col-md-12">
+									<input type="text" id="fname2" name="sender" class="form-control" placeholder="Your Name" required>
 								</div>
 							</div>
 
 							<div class="row form-group">
 								<div class="col-md-12">
-									<input type="text" id="email" name="senderEmail" class="form-control" placeholder="Your email address" required>
+									<input type="text" id="email2" name="senderEmail" class="form-control" placeholder="Your email address" required>
 								</div>
 							</div>
 
 							<div class="row form-group">
 								<div class="col-md-12">
-									<input type="text" id="subject" name="senderSubject" class="form-control" placeholder="Your subject of this message" required>
+									<input type="text" id="num2" name="senderNum" class="form-control" placeholder="Your phone number" required>
 								</div>
 							</div>
 
-							<div class="row form-group">
-								<div class="col-md-12">
-									<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" required></textarea>
-								</div>
-							</div>
 							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
+								<div class="col-md-12 text-center">
+									<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
+								</div>
 							</div>
 						</form>		
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 
 		<div id="colorlib-subscribe" class="subs-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
 						<h2>Arrange A Call Back</h2>
 						<p>Leave your contact number and our executive will get in touch with you shortly.</p>
 					</div>
 				</div>
-				<div class="row animate-box">
+				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<div class="row">
 							<div class="col-md-12">
@@ -1164,7 +1198,9 @@
 					</div>
 					<div class="col-md-4 colorlib-widget">
 						<h4>About Us</h4>
-						<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+						<p>
+							More than 10 year old Fitness Club with unlimited access to high end equipment's and wide spread workout space. Inclusive of Cardio Workout, Cross Workout, Weight Loss Program, Yoga, Kids Workout, Dance
+						</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="https://www.instagram.com/mgfitnessdys/" target="_blank"><i class="icon-instagram"></i></a></li>
@@ -1177,10 +1213,9 @@
 						<h4>Quick Links</h4>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> About Us</a></li>
-								<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>
-								<li><a href="#"><i class="icon-check"></i> Classes</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+								<li><a href="#classes"><i class="icon-check"></i> Classes</a></li>
+								<li><a href="#colorlib-testimony"><i class="icon-check"></i> Testimonials</a></li>
+								<li><a href="#colorlib-contact"><i class="icon-check"></i> Contact</a></li>
 							</ul>
 						</p>
 					</div>
@@ -1251,32 +1286,32 @@
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.waypoints.min.js" defer="defer"></script>
 	<!-- Stellar Parallax -->
 	<!-- <script src="js/jquery.stellar.min.js"></script> -->
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.flexslider-min.js" defer="defer"></script>
 	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl.carousel.min.js" defer="defer"></script>
 	<!-- Magnific Popup -->
 	<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
 	<!-- <script src="js/magnific-popup-options.js"></script> -->
 	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="js/jquery.countTo.js" defer="defer"></script>
 
-	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.validate.min.js" defer="defer"></script>
 
 	<!-- Fancybox  -->
-	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.fancybox.min.js" defer="defer"></script>
 
 	<!-- Slick  -->
-	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/slick.min.js"></script> -->
 
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="js/main.js" defer="defer"></script>
 
 	<!--Start of Tawk.to Script-->
-	<script type="text/javascript">
+	<script type="text/javascript" defer="defer">
 		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 		(function(){
 			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -1288,6 +1323,15 @@
 		})();
 	</script>
 	<!--End of Tawk.to Script-->
+
+	<script defer="defer">
+		window.addEventListener('load',function(){
+			Tawk_API = Tawk_API || {};
+			Tawk_API.onChatStarted = function(){
+				gtag('event', 'conversion', {'send_to': 'AW-787043627/p82XCIn22IsBEKuqpfcC'});
+			};
+		})
+	</script>
 
 </body>
 </html>

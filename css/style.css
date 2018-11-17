@@ -387,7 +387,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-hero .flexslider .slider-text {
   max-width: 100%;
   display: table;
-  opacity: 0;
+  /*opacity: 0;*/
   height: 700px;
   z-index: 9;
 }
@@ -478,7 +478,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-testimony,
 .colorlib-blog,
 #colorlib-project,
-#colorlib-subscribe {
+#colorlib-subscribe,
+#colorlib-contact2 {
   padding: 7em 0;
   clear: both;
 }
@@ -1353,7 +1354,6 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #fff;
   padding: 25px 15px;
   margin-left: 10px;
-  background: #f2f3f7;
 }
 .contact-info-wrap-flex .con-info:first-child {
   margin-left: 0;
@@ -1392,7 +1392,6 @@ h1, h2, h3, h4, h5, h6, figure {
   border: 1px solid #f0f0f0;
   font-size: 16px !important;
   font-weight: 300;
-  background: #f2f3f7;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -2170,10 +2169,11 @@ input[type=text] {
   background: url(../images/loader.gif) center no-repeat #fff;
 }
 
-.js .animate-box {
-  opacity: 0;
-}
-
+/*.animate-box {
+	.js & {
+		opacity: 0;
+	}
+}*/
 .success-msg {
   background: rgba(0, 0, 0, 0.7);
   text-align: center;

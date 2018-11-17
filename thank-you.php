@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MG Fitness Center - Gym | Yoga | BodyBuilding | Aerobics</title>
+	<title>MG Fitness Center - Gym | Yoga | Weight Loss | Zumba</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
+	<meta name="description" content="Unlimited access to high end equipment's and wide spread workout space. Inclusive of Cardio Workout, Cross Workout, Weight Loss Program, Yoga, Kids Workout, Dance" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
@@ -111,7 +111,9 @@
 					</div>
 					<div class="col-md-4 colorlib-widget">
 						<h4>About Us</h4>
-						<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+						<p>
+							More than 10 year old Fitness Club with unlimited access to high end equipment's and wide spread workout space. Inclusive of Cardio Workout, Cross Workout, Weight Loss Program, Yoga, Kids Workout, Dance
+						</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="https://www.instagram.com/mgfitnessdys/" target="_blank"><i class="icon-instagram"></i></a></li>
@@ -124,10 +126,9 @@
 						<h4>Quick Links</h4>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> About Us</a></li>
-								<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>
-								<li><a href="#"><i class="icon-check"></i> Classes</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+								<li><a href="#classes"><i class="icon-check"></i> Classes</a></li>
+								<li><a href="#colorlib-testimony"><i class="icon-check"></i> Testimonials</a></li>
+								<li><a href="#colorlib-contact"><i class="icon-check"></i> Contact</a></li>
 							</ul>
 						</p>
 					</div>

@@ -485,7 +485,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		.slider-text{
 			max-width: 100%;
 			display: table;
-			opacity: 0;
+			/*opacity: 0;*/
 			height: 700px;
 			z-index: 9;
 			> .slider-text-inner {
@@ -568,7 +568,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #colorlib-testimony,
 .colorlib-blog,
 #colorlib-project,
-#colorlib-subscribe{
+#colorlib-subscribe,
+#colorlib-contact2{
 	padding: 7em 0;
 	clear: both;
 }
@@ -1293,8 +1294,6 @@ h1, h2, h3, h4, h5, h6, figure {
 		background: $brand-white;
 		padding: 25px 15px;
 		margin-left: 10px;
-		// background: lighten($brand-black,98%);
-		background: $brand-gray;
 		&:first-child{
 			margin-left: 0;
 		}
@@ -1334,8 +1333,6 @@ h1, h2, h3, h4, h5, h6, figure {
 	border: 1px solid lighten($brand-black,94%);;
 	font-size: 16px !important;
 	font-weight: 300;
-	// background: lighten($brand-black,98%);
-	background: $brand-gray;
 	@include border-radius(0px);
 	
 	&:focus, &:active {
@@ -2016,11 +2013,11 @@ input[type="text"] {
 	background: url(../images/loader.gif) center no-repeat #fff;
 }
 
-.animate-box {
+/*.animate-box {
 	.js & {
 		opacity: 0;
 	}
-}
+}*/
 
 .success-msg {
 	background: rgba(0,0,0,0.7);
