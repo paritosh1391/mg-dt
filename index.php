@@ -87,19 +87,54 @@
 </head>
 <body>
 
-	<?php 
+<?php 
+	require_once $_SERVER['DOCUMENT_ROOT']."/designer/robust/PHPMailer/src/Exception.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."/designer/robust/PHPMailer/src/PHPMailer.php";
+	require_once $_SERVER['DOCUMENT_ROOT']."/designer/robust/PHPMailer/src/SMTP.php";
+	use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\Exception;	
 	if($_POST["submit"]) {
-		$recipient="paritosh.singh@nextraworld.com, digvijay6666@gmail.com";
-		$subject="Registration For Gym";
+		$From = 'Nextraone';
+		$FromEmail = 'noreply@nextraone.com';
+		$recipient="ashish.kumar@nextraworld.com";
 		$sender=@$_POST["sender"];
 		$senderEmail=@$_POST["senderEmail"];
-		$senderNumber=@$_POST["senderNumber"];
-		$mailBody="Name: $sender\nEmail: $senderEmail\n\n$senderNumber";
-		mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-		//$thankYou="<div class='success-msg'><p><img src='images/fitness.png' alt=''>Thank you! Your message has been sent.</p></div>";
-		header('Location: thank-you.php');die;
+		$senderNumber=@$_POST["senderNum"];
+		
+		//PHPMailer Object
+		$mail = new PHPMailer();
+		//From email address and name
+		$mail->From = $FromEmail;
+		$mail->FromName = $From;
+
+		//To address and name
+		$mail->addAddress($recipient, "Ashish");
+
+		//Address to which recipient will reply
+		$mail->addReplyTo($senderEmail, $sender);
+
+		//CC and BCC
+		/* $mail->addCC("cc@example.com");
+		$mail->addBCC("bcc@example.com"); */
+
+		//Send HTML or Plain Text email
+		$mail->isHTML(true);
+		$subject="Registration For Gym";
+		$mailBody="Name: $sender<br>Email: $senderEmail<br><br>$senderNumber";
+		$mail->Subject = $subject;
+		$mail->Body = $mailBody;
+		//$mail->AltBody = "This is the plain text version of the email content";
+
+		if(!$mail->send()) 
+		{
+			echo "Mailer Error: " . $mail->ErrorInfo;
+		} 
+		else 
+		{
+			header('Location: thank-you.php');die;
+		}
 	}
-	?>
+?>
 
 	<div class="success-msg-wrap">
 		<?php echo $thankYou;?>			
@@ -312,15 +347,28 @@
 					<div class="col-md-6 col-md-offset-3">
 						<h2 class="text-center">Get In Touch</h2>
 						<?php 
-						if($_POST["submit"]) {
-							$recipient="info@mg-dys.com, digvijay6666@gmail.com";
+						if($_POST["getintouchsubmit"]) {
+							//$recipient="paritosh.singh@nextraworld.com";
+							
+							// Always set content-type when sending HTML email
+							$subject = 'MG Fitness Center';
+							$From = 'Nextraone';
+							$FromEmail = 'noreply@nextraone.com';
+							$headers = "MIME-Version: 1.0" . "\r\n";
+							$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+							// More headers
+							$headers .= "From: $From <$FromEmail>" . "\r\n";
+							//$headers .= 'Cc: myboss@example.com' . "\r\n";
+
+							$recipient="ashish.kumar@nextraworld.com";
 							$senderSubject=@$_POST["senderSubject"];
 							$sender=@$_POST["sender"];
 							$senderEmail=@$_POST["senderEmail"];
 							$senderNum=@$_POST["senderNum"];
 							$mailBody="Name: $sender\nEmail: $senderEmail\nNumber: $senderNum\n\n";
-							mail($recipient, $mailBody, "From: $sender <$senderEmail>");
-							$thankYou="<p>Thank you! Your message has been sent.</p>";
+							mail($recipient, $subject, $mailBody, $headers);
+							header('Location: thank-you.php');die;
 						}
 						?>
 						<form method="POST">
@@ -344,7 +392,7 @@
 
 							<div class="form-group">
 								<div class="col-md-12 text-center">
-									<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
+									<input type="submit" class="btn btn-primary btn-learn btn-submit" name="getintouchsubmit" value="Submit">
 								</div>
 							</div>
 						</form>		
@@ -1114,15 +1162,16 @@
 					<div class="col-md-6 col-md-offset-3">
 						<h2 class="text-center">Get In Touch</h2>
 						<?php 
-						if($_POST["submit"]) {
-							$recipient="info@mg-dys.com, digvijay6666@gmail.com";
+						if($_POST["submit3"]) {
+							//$recipient="paritosh.singh@nextraworld.com";
+							$recipient="ashish.kumar@nextraworld.com";
 							$senderSubject=@$_POST["senderSubject"];
 							$sender=@$_POST["sender"];
 							$senderEmail=@$_POST["senderEmail"];
 							$senderNum=@$_POST["senderNum"];
 							$mailBody="Name: $sender\nEmail: $senderEmail\nNumber: $senderNum\n\n";
 							mail($recipient, $mailBody, "From: $sender <$senderEmail>");
-							$thankYou="<p>Thank you! Your message has been sent.</p>";
+							header('Location: thank-you.php');die;
 						}
 						?>
 						<form method="POST">
@@ -1146,7 +1195,7 @@
 
 							<div class="form-group">
 								<div class="col-md-12 text-center">
-									<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit" value="Submit">
+									<input type="submit" class="btn btn-primary btn-learn btn-submit" name="submit3" value="Submit">
 								</div>
 							</div>
 						</form>		
